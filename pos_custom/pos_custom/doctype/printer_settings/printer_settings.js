@@ -11,18 +11,30 @@ frappe.ui.form.on('Printer Settings', {
 			})
 			.then((data) => {
 				// Get the default_printer field control
-				let defaultPrinterField = frm.fields_dict['default_printer'];
+				let printer1 = frm.fields_dict['printer1'];
+				let printer2 = frm.fields_dict['printer2'];
+				let printer3 = frm.fields_dict['printer3'];
+				let printer4 = frm.fields_dict['printer4'];
 
-				// Clear existing options
-				defaultPrinterField.df.options = [];
+				printer1.df.options = [];
+				printer2.df.options = [];
+				printer3.df.options = [];
+				printer4.df.options = [];
+				data.push("");
 
 				// Add new options from the list of available printers
 				for (let printer of data) {
-					defaultPrinterField.df.options.push(printer);
+					printer1.df.options.push(printer);
+					printer2.df.options.push(printer);
+					printer3.df.options.push(printer);
+					printer4.df.options.push(printer);
 				}
 
 				// Refresh the field to update the options
-				defaultPrinterField.refresh();
+				printer1.refresh();
+				printer2.refresh();
+				printer3.refresh();
+				printer4.refresh();
 			})
 			.catch((err) => {
 				// Handle any errors that may occur while fetching printers

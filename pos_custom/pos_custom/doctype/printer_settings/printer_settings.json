@@ -7,19 +7,70 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "default_printer"
+  "printer1",
+  "printer2",
+  "printer3",
+  "printer4",
+  "column_break_kxfx7",
+  "print_format_1",
+  "print_format_2",
+  "print_format_3",
+  "print_format_4"
  ],
  "fields": [
   {
-   "fieldname": "default_printer",
+   "fieldname": "printer1",
    "fieldtype": "Select",
-   "label": "Default Printer"
+   "label": "Printer1"
+  },
+  {
+   "fieldname": "printer2",
+   "fieldtype": "Select",
+   "label": "Printer2"
+  },
+  {
+   "fieldname": "printer3",
+   "fieldtype": "Select",
+   "label": "Printer3"
+  },
+  {
+   "fieldname": "printer4",
+   "fieldtype": "Select",
+   "label": "Printer4"
+  },
+  {
+   "fieldname": "column_break_kxfx7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "print_format_1",
+   "fieldtype": "Link",
+   "label": "Print Format 1",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "print_format_2",
+   "fieldtype": "Link",
+   "label": "Print Format 2",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "print_format_3",
+   "fieldtype": "Link",
+   "label": "Print Format 3",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "print_format_4",
+   "fieldtype": "Link",
+   "label": "Print Format 4",
+   "options": "Print Format"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-07-21 06:29:37.810596",
+ "modified": "2023-08-02 12:07:10.492336",
  "modified_by": "Administrator",
  "module": "Pos Custom",
  "name": "Printer Settings",
